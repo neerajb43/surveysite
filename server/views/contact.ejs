@@ -1,0 +1,62 @@
+<%- include partials/header.ejs  %>
+
+ <!--Navbar-->
+<%- include partials/navbar.ejs  %>
+
+
+ 
+<!-- contact section starts -->
+<section class="contact" id="contact">
+
+    <h2 class="heading"><i class="fas fa-headset"></i> Get in <span>Touch With Us</span></h2>
+
+    <div class="container">
+        <div class="content">
+            <div class="image-box">
+                <img src="/images/contact-us3.png" alt="contact image">
+            </div>
+            <form action="/register" method="POST">
+
+                <div class="form-group">
+                    <div class="field">
+                        <input type="text" name="name" placeholder="Name" required>
+                        <i class='fas fa-user'></i>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="email" placeholder="Email" required>
+                        <i class='fas fa-envelope'></i>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="phone" placeholder="Phone">
+                        <i class='fas fa-phone-alt'></i>
+                    </div>
+                    <div class="message">
+                        <textarea placeholder="Message" name="message" required></textarea>
+                        <i class="fas fa-comment-dots"></i>
+                    </div>
+                </div>
+               
+                <div class="button-area">
+                    <button type="submit" title="Sorry! This service is not yet active. Please reach me via email or cell.">
+                        Submit <i class="fa fa-paper-plane"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+  <!--footer Section-->
+ <%- include partials/footer.ejs  %>
+
+  <!--Script Section-->
+
+<%- include partials/scripts.ejs  %>
+
+
+
+
+
+
+

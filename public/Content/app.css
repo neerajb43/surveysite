@@ -1,0 +1,279 @@
+body{
+  background-image: linear-gradient(135deg, #cdc1e0, #9491c0, #7989d4 );
+  font-family: sans-serif;
+  background-repeat: no-repeat;
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.navbar  {
+  background-color: #537895 ;
+
+}
+.navbar {
+  font-family: "Poppins", sans-serif;
+ 
+}
+
+.box-form{
+  margin: 10vh,auto;
+  width: 60vw;
+  background: white;
+  border-radius: 10px;
+  display: flex;
+  align-items: stretch;
+  justify-content:space-between ;
+  box-shadow: 0 0 20px 6px #9e9ea0;
+  height: 60vh;
+      
+}
+@media(max-width:680px){
+  .box-form{
+      flex-flow: wrap;
+      text-align: center;
+      align-content: center;
+      align-items: center;
+      height: auto;
+  }
+}
+.box-form .left .overlay h1{
+  font-size: 25px;
+  line-height: 1;
+  font-weight: 900;
+  margin-top: 5vh;
+  margin-bottom: 0vh;
+}
+.box-form div{
+  height: auto;
+}
+.box-form .left{
+  color: green;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/images/image.png);
+}
+.box-form .left .overlay{
+  padding: 30px;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+.box-form .right{
+  color: green;
+  padding-left: 10px;
+  width: 30vw;
+  height: 100vh;
+  padding-right: 3vw;
+  padding-top: 5vh;
+}
+@media(max-width:680px){
+  .box-form .right{
+   height: 65vh;
+   width: 40vh;
+  }
+}
+
+.box-form .right h5{
+  font-size: 20px;
+  line-height: 1em;
+  text-align: center;
+}
+.box-form .right p{
+  font-size: 20px;
+  text-align: center;
+}
+.box-form .right input{
+  overflow: hidden;
+  width: 70%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  border-bottom: .5px solid rgb(202, 211, 218);    
+}
+.box-form .right button{
+  float: right;
+  color: red;
+  font-size: 15px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: inline-flex;
+  border: 1px solid rgb(138, 124, 202);
+  box-shadow: 0px 4px 20px 0px rgb(183, 191, 199);
+  background-image: linear-gradient(135de #e7f0fd, #667eea );
+}
+
+/* contact section starts*/
+.contact {
+  background: linear-gradient(to right, #accbee, #e7f0fd);
+  min-height: 70vh;
+}
+
+.contact .container {
+  
+  max-width: 1150px;
+  width: 100%;
+  background: rgb(233, 233, 247);
+  border-radius: 1rem;
+  margin: 1rem 8rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.contact .container .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+}
+
+.contact .content .image-box {
+  max-width: 80%;
+  margin-left: 1rem;
+}
+.contact .content .image-box img {
+  width: 100%;
+  height: 30rem;
+  position: relative;
+}
+.contact .content form {
+  width: 30%;
+  margin-right: 3.5rem;
+}
+form .form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.form-group .field {
+  height: 60px;
+  display: flex;
+  position: relative;
+  margin: 1rem;
+  width: 100%;
+  
+}
+.contact form i {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  color: #537895;
+  font-size: 15px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+form .field input,
+form .message textarea {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 16px 0 48px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 3px;
+  border-style: solid #09203f;
+  border-width: 1.5px;
+  background: #e7f0fd;
+}
+.field input::placeholder,
+.message textarea::placeholder {
+  color: #667eea;
+}
+.field input:focus,
+.message textarea:focus {
+  padding-left: 50px;
+  border: 2px solid #764ba2;
+}
+.field input:focus ~ i,
+.message textarea:focus ~ i {
+  color: #667eea;
+}
+form .message {
+  position: relative;
+  margin: 1rem;
+  width: 100%;
+}
+form .message i {
+  top: 25px;
+  font-size: 17px;
+  left: 15px;
+}
+form .message textarea {
+  min-height: 140px;
+  max-height: 230px;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 12px 20px 0 48px;
+}
+form .message textarea::-webkit-scrollbar {
+  width: 0px;
+}
+form .button-area {
+  display: flex;
+  float: right;
+  flex-direction: row-reverse;
+}
+.button-area button {
+  color: #e7f0fd;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  cursor: none;
+  border-radius: 10px;
+  padding: 13px 25px;
+  background: #537895;
+  box-shadow: 0px 5px 10px rgba(68, 68, 75, 0.6);
+  transition: 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+.button-area button:hover {
+  background: #5a6f7e;
+}
+.button-area span {
+  font-size: 20px;
+  padding: 1.5rem;
+  display: none;
+}
+.button-area button i {
+  position: relative;
+  top: 9px;
+  left: 1px;
+  font-size: 1.3rem;
+  transition: 0.3s;
+  color: #fff;
+}
+.button-area button:hover i {
+  left: 5px;
+}
+
+/* contact section media queries starts */
+@media (max-width: 900px) {
+  .contact {
+    min-height: 70vh;
+  }
+  .contact .container {
+    margin: 3rem 0 2rem 0;
+  }
+  .contact .container .content {
+    padding: 18px 12px;
+  }
+  .contact .content .image-box {
+    display: none;
+  }
+  .contact .content form {
+    width: 100%;
+    margin-right: 2rem;
+  }
+}
+
+
