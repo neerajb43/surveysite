@@ -1,4 +1,4 @@
 module.exports = 
 {
-    "URI": "mongodb://localhost/business_list"
+    "URI": "mongodb+srv://Webapplication:Vw0euGSQsqUswdAF@cluster0.gqgtk1a.mongodb.net/surveydatabase?retryWrites=true&w=majority"
 }
